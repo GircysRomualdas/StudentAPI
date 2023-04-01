@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using StudentAPI;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +28,45 @@ app.UseHttpsRedirection();
 
 
 
-app.MapGet("/", () => "Hello to student API");
+// Get All 
+app.MapGet("/students", async (DataContext context) => 
+    await context.Students.ToListAsync());
+
+// Get 
+app.MapGet("/students/{id}", async (DataContext context, int id) =>
+    await context.Students.FindAsync(id) is Student student ? 
+        Results.Ok(student) :
+        Results.NotFound("Student not found"));
+
+// Post
+app.MapPost("/students", async(DataContext context, Student student) =>
+{
+    context.Students.Add(student);
+    await context.SaveChangesAsync();
+    return Results.Ok(student);
+});
+
+// Put
+app.MapPut("/students/{id}", async(DataContext context, Student student, int id) =>
+{ 
+    var dbStudent = await context.Students.FindAsync(id);
+    if (dbStudent == null) return Results.NotFound("Student not found");
+    dbStudent.FirstName = student.FirstName;
+    dbStudent.LastName = student.LastName;
+    await context.SaveChangesAsync();
+    return Results.Ok(dbStudent);
+});
+
+// Delete
+app.MapDelete("/students/{id}", async(DataContext context, int id) =>
+{
+    var dbStudent = await context.Students.FindAsync(id);
+    if (dbStudent == null) return Results.NotFound("Student not found");
+    context.Students.Remove(dbStudent);
+    await context.SaveChangesAsync();
+    return Results.Ok(dbStudent);
+
+});
 
 
 
