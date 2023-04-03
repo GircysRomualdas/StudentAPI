@@ -3726,11 +3726,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rudis\\Desktop\\Repository\\StudentAPI\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Rudis\\Desktop\\Repository\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
       "projectName": "StudentAPI",
-      "projectPath": "C:\\Users\\Rudis\\Desktop\\Repository\\StudentAPI\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
+      "projectPath": "C:\\Users\\Rudis\\Desktop\\Repository\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
       "packagesPath": "C:\\Users\\Rudis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rudis\\Desktop\\Repository\\StudentAPI\\StudentAPI\\StudentAPI\\obj\\",
+      "outputPath": "C:\\Users\\Rudis\\Desktop\\Repository\\StudentAPI\\StudentAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rudis\\AppData\\Roaming\\NuGet\\NuGet.Config",

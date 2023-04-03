@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yoT/fzSwzKvU2dPApSo9Ly2eFMHCyvNHZQiehMkhgco395Szf2tIN9RJrJJ7O2ddQ3X43ZTcZYy72lViQdpvDQ==",
+  "dgSpecHash": "A1xzcucdlxofuAr5UPuBdiI5CmX1zqvUjfE9x8hwpS64QbiyTotrcrR6HsZDdRwXbzSU5ti1ZQZP3W0h9trI5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rudis\\Desktop\\Repository\\StudentAPI\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
+  "projectFilePath": "C:\\Users\\Rudis\\Desktop\\Repository\\StudentAPI\\StudentAPI\\StudentAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rudis\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Rudis\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
